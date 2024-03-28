@@ -18,11 +18,11 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
         super()
         Config()
         this.config = {
-            name: process.env.BOT_NAME || 'bot',
-            session: process.env.SESSION || 'SESSION',
+            name: process.env.BOT_NAME || 'Casino',
+            session: process.env.SESSION || 'Casino',
             prefix: process.env.PREFIX || '#',
             gkey: 'AIzaSyDMbI3nvmQUrfjoCJYLS69Lej1hSXQjnWIEcx',
-            mods: (process.env.MODS || '27844132352').split(', ').map((user) => `${user}@s.whatsapp.net`),
+            mods: (process.env.MODS || '919389379221').split(', ').map((user) => `${user}@s.whatsapp.net`),
             chatBotUrl: 'http://api.brainshop.ai/get?bid=170305&key=8OpWeiccHtCb1dFj&uid=[uid]&msg=[msg',
             PORT: Number(process.env.PORT || 3000)
         }
@@ -31,7 +31,7 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
 
     public start = async (): Promise<client> => {
         await connect(
-            'mongodb+srv://herrison:wells@cluster0.tqhtuou.mongodb.net/?retryWrites=true&w=majority'
+            'mongodb+srv://Redo:Redo@cluster0.iwmez.mongodb.net/myFirstDatabase?retryWrites=true'
         )
         this.log('Connected to the Database')
         const { useDatabaseAuth } = new AuthenticationFromDatabase(this.config.session)
@@ -41,7 +41,7 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
             printQRInTerminal: true,
             auth: state,
             logger: P({ level: 'fatal' }),
-            browser: ['Hitman47😈', 'fatal', '4.0.0'],
+            browser: ['Ma Chuda Tu', 'fatal', '4.0.0'],
             getMessage: async (key) => {
                 return {
                     conversation: ''
